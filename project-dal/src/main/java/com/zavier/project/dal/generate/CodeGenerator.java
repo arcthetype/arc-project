@@ -41,8 +41,8 @@ public class CodeGenerator {
 
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
-        String projectPath = System.getProperty("user.dir") + "/project-dal";
-        gc.setOutputDir(projectPath + "/src/main/java");
+        String path = System.getProperty("user.dir") + "/project-dal";
+        gc.setOutputDir(path + "/src/main/java");
         gc.setAuthor("zhengwei");
         gc.setOpen(false);
         gc.setFileOverride(true);
@@ -85,7 +85,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/src/main/resources/mapper/"
+                return path + "/src/main/resources/mapper/"
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
