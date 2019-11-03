@@ -14,17 +14,32 @@
     <dependencies>
         <dependency>
             <groupId>com.zavier</groupId>
-            <artifactId>project-dao</artifactId>
+            <artifactId>project-dal</artifactId>
         </dependency>
         <dependency>
             <groupId>com.zavier</groupId>
             <artifactId>project-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zavier</groupId>
+            <artifactId>project-client</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-redis</artifactId>
             <version>2.0.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.1.0</version>
         </dependency>
 
         <!-- dubbo配置相关 开始 -->
@@ -48,6 +63,12 @@
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
             <version>3.4.14</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- dubbo配置相关 结束 -->
 

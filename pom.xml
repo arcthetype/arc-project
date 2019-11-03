@@ -5,10 +5,11 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>project-common</module>
-		<module>project-dao</module>
+		<module>project-dal</module>
 		<module>project-manager</module>
 		<module>project-service</module>
 		<module>project-web</module>
+		<module>project-client</module>
 	</modules>
 
 	<parent>
@@ -56,17 +57,27 @@
 			<dependency>
 				<groupId>com.zavier</groupId>
 				<artifactId>project-service</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.zavier</groupId>
-				<artifactId>project-dao</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<artifactId>project-manager</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.zavier</groupId>
+				<artifactId>project-dal</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.zavier</groupId>
 				<artifactId>project-common</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.zavier</groupId>
+				<artifactId>project-client</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

@@ -1,10 +1,10 @@
 package com.zavier.project.service;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.zavier.project.area.entity.Area;
-import com.zavier.project.area.mapper.AreaMapper;
-import com.zavier.project.dto.AreaDTO;
-import com.zavier.project.mapper.AreaDTOMapper;
+import com.zavier.project.dal.entity.Area;
+import com.zavier.project.dal.mapper.AreaMapper;
+import com.zavier.project.service.dto.AreaDTO;
+import com.zavier.project.service.mapper.AreaDTOMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

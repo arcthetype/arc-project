@@ -14,7 +14,11 @@
     <dependencies>
         <dependency>
             <groupId>com.zavier</groupId>
-            <artifactId>project-dao</artifactId>
+            <artifactId>project-manager</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zavier</groupId>
+            <artifactId>project-dal</artifactId>
         </dependency>
 
         <dependency>
