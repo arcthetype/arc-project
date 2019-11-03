@@ -34,6 +34,7 @@ public class DubboConfig {
         final ProtocolConfig protocolConfig = new ProtocolConfig();
         protocolConfig.setName("dubbo");
         protocolConfig.setPort(20880);
+        protocolConfig.setAccesslog("true");
         return protocolConfig;
     }
 
