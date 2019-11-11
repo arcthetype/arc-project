@@ -31,6 +31,8 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<org.mapstruct.version>1.3.1.Final</org.mapstruct.version>
 		<org.projectlombok.version>1.18.10</org.projectlombok.version>
+		<swagger2.version>2.9.2</swagger2.version>
+		<fastjson.version>1.2.60</fastjson.version>
 	</properties>
 
 	<dependencyManagement>
@@ -40,7 +42,6 @@
 				<artifactId>mapstruct</artifactId>
 				<version>${org.mapstruct.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
@@ -49,9 +50,20 @@
 			</dependency>
 
 			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${swagger2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${swagger2.version}</version>
+			</dependency>
+
+			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>fastjson</artifactId>
-				<version>1.2.60</version>
+				<version>${fastjson.version}</version>
 			</dependency>
 
 			<dependency>
