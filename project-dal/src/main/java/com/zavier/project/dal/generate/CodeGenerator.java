@@ -62,7 +62,7 @@ public class CodeGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("com.zavier.project.dao");
+        pc.setParent("com.zavier.project.dal");
         pc.setService("dao");
         pc.setServiceImpl("dao.impl");
         mpg.setPackageInfo(pc);
